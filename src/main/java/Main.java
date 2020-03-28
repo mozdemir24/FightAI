@@ -59,7 +59,7 @@ public class Main {
         }
     }
 
-    private static int getTotalRound(int characterSize) {
+    public static int getTotalRound(int characterSize) {
         int totalRound = 0;
         do {
             characterSize = characterSize / 2;
@@ -68,7 +68,7 @@ public class Main {
         return totalRound;
     }
 
-    private static List<Character> getCharacters(int size) {
+    public static List<Character> getCharacters(int size) {
         List<Character> characters = new ArrayList<>();
 
         for (int i = 0; i < size; i++) {
@@ -79,7 +79,7 @@ public class Main {
         return characters;
     }
 
-    private static Pair getPair(List<Character> characters) {
+    public static Pair getPair(List<Character> characters) {
         int randomIndex1;
         int randomIndex2;
 

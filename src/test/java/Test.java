@@ -21,4 +21,12 @@ public class Test {
             Assert.assertNotEquals(pair.getCharacter1(), pair.getCharacter2());
         }
     }
+
+    @org.junit.Test
+    public void getTotalRound() {
+        int characterSize = 32;
+        int result = Main.getTotalRound(characterSize);
+
+        Assert.assertEquals(5, result);
+    }
 }
